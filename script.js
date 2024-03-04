@@ -7,7 +7,9 @@ var config = {
         default: 'arcade',
         arcade: {
             gravity: { y: 300 }, // Define a força da gravidade
-        
+
+
+            
         }
     },
     scene: {
