@@ -7,7 +7,7 @@ var config = {
         default: 'arcade',
         arcade: {
             gravity: { y: 300 }, // Define a força da gravidade
-            debug: true // Ativa o modo de depuração para física
+        
         }
     },
     scene: {
@@ -41,17 +41,19 @@ function create() {
     // Adiciona a imagem de fundo no jogo
     var fundo = this.add.image(this.sys.game.config.width / 2, this.sys.game.config.height / 2, 'fundo');
     fundo.setScale(this.sys.game.config.width / fundo.width, this.sys.game.config.height / fundo.height);
+    
 
     // Adiciona o personagem ao jogo
     boneco = this.physics.add.sprite(100, 450, 'bonecoanda');
     boneco.setScale(2.0);
+    boneco.body.setSize(20, 25, true)
 
     // Configura animações do personagem
     this.anims.create({
         key: 'correndo',
         frames: this.anims.generateFrameNumbers('bonecoanda', { start: 5, end: 7 }),
         frameRate: 10,
-        repeat: -1
+        repeat: -1,
     });
 
     // Adiciona uma animação para o personagem parado
