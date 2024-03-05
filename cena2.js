@@ -13,7 +13,7 @@ export default class cena2 extends Phaser.Scene {
     create(){
 
         // Adiciona um texto tela inicial
-        this.placarText = this.add.text(650, 16, 'TELA INICIAL', { fontSize: '32px', fill: '#fff' });
+        this.placarText = this.add.text(650, 16, 'HORA DA AÇÃO: O JOGO', { fontSize: '32px', fill: '#fff' });
 
         // Adiciona um texto CLIQUE aqui: jogar
         this.jogarText = this.add.text(580, 285, 'CLIQUE AQUI: JOGAR', { fontSize: '32px', fill: '#fff' });
