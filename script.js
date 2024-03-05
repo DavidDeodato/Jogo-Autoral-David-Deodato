@@ -10,7 +10,7 @@ var config = {
         default: 'arcade',
         arcade: {
             gravity: { y: 500 }, // Define a força da gravidade
-debug: true,
+debug: false,
 
             
         }
