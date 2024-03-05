@@ -152,8 +152,10 @@ var moeda
             this.pulosRestantes --;
             
             
+      //lista vetor contando cada vez que o update é executado
+            this.vetor = [1, 2, 3, 4, 5, 6,7,8];
 
-
+            console.log(this.vetor[1],this.vetor[2],this.vetor[3], this.vetor[4], this.vetor[5]);
 
             // Incrementa o placar quando o jogador pula
             this.placar += 10
